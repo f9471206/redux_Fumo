@@ -8,7 +8,7 @@ import App from "./App";
 const root = ReactDom.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/redux_Fumo">
     <Provider store={store}>
       <App />
     </Provider>
