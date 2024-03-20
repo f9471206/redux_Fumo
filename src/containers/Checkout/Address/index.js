@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { nanoid } from "nanoid";
 import { Form, Input, Cascader, Button } from "antd";
 
@@ -83,7 +83,9 @@ const Adderss = () => {
           type="primary"
           htmlType="submit"
           onClick={handleSubmit}
-          disabled={formData.name == "" || formData.address == 0 ? true : false}
+          disabled={
+            formData.name === "" || formData.address === 0 ? true : false
+          }
         >
           下一步
         </Button>
