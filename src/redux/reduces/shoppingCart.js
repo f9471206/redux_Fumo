@@ -12,7 +12,7 @@ const initState = [
     price: 1000,
     quantity: 1,
     total: 1000,
-    url: "https://m.media-amazon.com/images/I/51giFSLl2BL._AC_SX679_.jpg",
+    url: "https://img.amiami.com/images/product/main/222/GOODS-04238024.jpg",
   },
 ];
 
