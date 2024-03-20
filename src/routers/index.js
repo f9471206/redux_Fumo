@@ -9,7 +9,7 @@ import NotFound from "../page/notFound";
 
 const routes = [
   {
-    path: "/",
+    path: "store",
     element: <Store />,
     children: [
       {

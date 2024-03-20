@@ -40,7 +40,7 @@ const ProductStore = ({ storeSort }) => {
 
   const navgate = useNavigate();
   const onClick = (e) => {
-    navgate("/");
+    navgate("/store");
     storeSort(e.key);
   };
 

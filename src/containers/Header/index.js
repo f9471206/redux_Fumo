@@ -10,11 +10,11 @@ const Nav = (props) => {
   const items = [
     {
       key: "1",
-      label: <Link to={"/"} children="商店" />,
+      label: <Link to={"store"} children="商店" />,
     },
     {
       key: "2",
-      label: <Link to={"/order"} children="訂單" />,
+      label: <Link to={"order"} children="訂單" />,
     },
   ];
 
