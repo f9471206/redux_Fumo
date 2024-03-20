@@ -11,9 +11,9 @@ const Detail = (props) => {
   const { Meta } = Card;
   const navigate = useNavigate();
   //商品詳情連結
-  const handleDetail = (state) => {
+  const handleDetail = (id) => {
     return () => {
-      navigate("detail", { state });
+      navigate(`detail/${id}`);
     };
   };
 
@@ -60,7 +60,7 @@ const Detail = (props) => {
                   alt="example"
                 />
               }
-              onClick={handleDetail({ ...d })}
+              onClick={handleDetail(d.id)}
             >
               <Meta title={`${d.name}`} />
               <Row align="middle">

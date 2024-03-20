@@ -14,3 +14,5 @@ export const CHANGE_QUANTITY = "ChangeQuantity";
 export const ADD_ORDER = "addOrder";
 //變更商店分類
 export const STORE_SORT = "storeSort";
+//查看商品細節
+export const PRODUCT_DETAIL = "productDetail";

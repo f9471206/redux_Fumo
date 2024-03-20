@@ -1,13 +1,14 @@
-import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useLocation, Link, useParams } from "react-router-dom";
 import { connect } from "react-redux";
 import { nanoid } from "nanoid";
 import { Col, Row, Button, Image, message, Breadcrumb } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { addShoppingCart } from "../../../../redux/actions/shoppongCart";
+import { productDetail } from "../../../../redux/actions/products";
 
 const Detail = (props) => {
-  const data = useLocation().state;
+  const { id } = useParams();
 
   //加入購物車成功後提示
   const [messageApi, contextHolder] = message.useMessage();
@@ -26,6 +27,12 @@ const Detail = (props) => {
     };
     props.addShoppingCart(newObj);
   };
+
+  useEffect(() => {
+    props.productDetail(id);
+  }, []);
+
+  const data = props.state[0];
 
   return (
     <>
@@ -68,6 +75,7 @@ const Detail = (props) => {
   );
 };
 
-export default connect(() => ({}), {
+export default connect((state) => ({ state: state.products }), {
   addShoppingCart,
+  productDetail,
 })(Detail);

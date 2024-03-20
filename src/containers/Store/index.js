@@ -29,6 +29,10 @@ const tag = [
     label: "地靈殿",
   },
   {
+    key: "Hakugyokurou",
+    label: "白玉樓",
+  },
+  {
     key: "other",
     label: "其他",
   },

@@ -17,7 +17,7 @@ const routes = [
         element: <Items />,
       },
       {
-        path: "detail",
+        path: "detail/:id",
         element: <Detail />,
       },
     ],

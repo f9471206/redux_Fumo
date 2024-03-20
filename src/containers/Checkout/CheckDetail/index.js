@@ -82,7 +82,7 @@ const CheckDetail = (props) => {
     //結帳後訂單明細
     props.addOrder(newObj);
     props.deleteAllShoppingCart(true);
-    navigate("/");
+    navigate("/store");
   };
 
   return (
