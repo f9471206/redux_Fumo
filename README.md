@@ -1,6 +1,6 @@
 # Fumo 購物車作品
 
-[Demo](https://f9471206.github.io/redux_Fumo/store)
+[GitHub page Demo](https://f9471206.github.io/redux_Fumo/store)
   
 * 使用 React 以及 React-Redux 完成
 * Ant Design 設計 UI/UX 
