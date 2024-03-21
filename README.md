@@ -2,7 +2,7 @@
 
 [GitHub page Demo](https://f9471206.github.io/redux_Fumo/store)
   
-* 使用 React 以及 React-Redux 完成
+* 使用 React 管理路由 以及 React-Redux 管理狀態
 * Ant Design 設計 UI/UX 
 * 加入購物車及查看訂單之功能
 
