@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
-import { useLocation, Link, useParams } from "react-router-dom";
+import React from "react";
+import { Link, useParams } from "react-router-dom";
 import { connect } from "react-redux";
 import { nanoid } from "nanoid";
 import { Col, Row, Button, Image, message, Breadcrumb } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { addShoppingCart } from "../../../../redux/actions/shoppongCart";
-import { productDetail } from "../../../../redux/actions/products";
 
 const Detail = (props) => {
   const { id } = useParams();
@@ -28,11 +27,7 @@ const Detail = (props) => {
     props.addShoppingCart(newObj);
   };
 
-  useEffect(() => {
-    props.productDetail(id);
-  }, []);
-
-  const data = props.state[0];
+  const data = props.state.filter((item) => item.id == id)[0];
 
   return (
     <>
@@ -77,5 +72,4 @@ const Detail = (props) => {
 
 export default connect((state) => ({ state: state.products }), {
   addShoppingCart,
-  productDetail,
 })(Detail);

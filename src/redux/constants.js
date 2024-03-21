@@ -16,3 +16,5 @@ export const ADD_ORDER = "addOrder";
 export const STORE_SORT = "storeSort";
 //查看商品細節
 export const PRODUCT_DETAIL = "productDetail";
+//換頁
+export const CHANGE_PAGE = "changePage";

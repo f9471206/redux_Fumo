@@ -1,4 +1,4 @@
-import { STORE_SORT, PRODUCT_DETAIL } from "../constants";
+import { STORE_SORT, PRODUCT_DETAIL, CHANGE_PAGE } from "../constants";
 
 const initState = [
   {
@@ -102,6 +102,9 @@ export default function Products(proState = initState, action) {
       const newDetail = initState.filter((obj) => obj.id === data);
       proState = newDetail;
       return proState;
+    //換頁 data == page
+    // case CHANGE_PAGE:
+    //   return proState.slice((data - 1) * 8, data * 8);
     default:
       return proState;
   }

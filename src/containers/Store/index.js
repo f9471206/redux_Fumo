@@ -81,6 +81,8 @@ const ProductStore = ({ storeSort }) => {
             minHeight: 280,
             background: colorBgContainer,
             borderRadius: borderRadiusLG,
+            display: "flex",
+            flexDirection: "column",
           }}
         >
           <Outlet />
